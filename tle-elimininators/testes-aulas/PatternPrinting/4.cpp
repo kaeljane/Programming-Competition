@@ -6,6 +6,7 @@ int main()
     int rows = 5;
     for (int i = 0; i < rows; i++)
     {
+        // começa com quatro, 
         for (int j = rows - 1; j > i; j--)
         {
             cout <<" ";
