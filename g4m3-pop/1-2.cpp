@@ -5,7 +5,7 @@ int main()
 {
     // Somar o número de melões colhidos e comparar com o total esperado pelo colheteiro
     // Se o total colhido for igual ou superar o valor esperado, a situação é NADA PREOCUPANTE. OK
-    // Total colhidos for menor que ate 5unidades POUCO PREOCUPANTE.
+    // Total colhidos for menor que ate 5 unidades POUCO PREOCUPANTE.
     // Menor ainda é MUITO PREOCUPANTE.
     // N -> n produtores
     // E -> valor total esperado
