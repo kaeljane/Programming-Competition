@@ -1,0 +1,16 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float a, b;
+    cin>>a>>b;
+    // cout<<floor(a);
+    cout<<"floor "<<a<<" / "<<b<<" = "<< floor(a/b)<<endl;
+    cout<<"ceil "<<a<<" / "<<b<<" = "<< ceil(a/b)<<endl;
+    cout<<"round "<<a<<" / "<<b<<" = "<< round(a/b)<<endl;
+    return 0;
+}
