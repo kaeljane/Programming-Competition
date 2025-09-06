@@ -3,6 +3,7 @@
 #include <string>
 #include <algorithm>
 #include <cmath>
+#include <limits>
 using namespace std;
 
 int main() {
@@ -13,12 +14,18 @@ int main() {
     }
     // a partir daqui ele é totalmente divisivel por a
     // 5 * 10e9
-    else if (((n*k)/a) > pow(10, 9)){
+
+    else if (((n*k/a)) > numeric_limits<int>::max()){
         cout<<"long long"<<endl;
     }
-    else if (((n*k)/a) < pow(10, 9)) {cout<<"int"<<endl;}
-    else{cout<<"errado"<<endl;}
-
-
+    else if (((n*k/a)) <= numeric_limits<int>::max()) {
+        cout<<"int"<<endl;
+    }
+    else {
+        cout<<"errado"<<endl;
+    }
+    // cout<<numeric_limits<int>::max()<<endl;
+    // cout<<numeric_limits<int>::min()<<endl;
+    // terminar depois tired
     return 0;
 }
