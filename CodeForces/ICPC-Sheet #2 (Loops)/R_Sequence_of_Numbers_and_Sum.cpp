@@ -1,12 +1,13 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #include <vector>
 #include <string>
 #include <algorithm>
+#define ll long long
 using namespace std;
 // soma de gauus n(n+1)/2
 int main() {
-    long long n, m;
-    long long soma = 0;
+    ll n, m;
+    ll soma = 0;
     while (cin>>n>>m) {
         if (n>0 && m>0){
             if (n<m) {
