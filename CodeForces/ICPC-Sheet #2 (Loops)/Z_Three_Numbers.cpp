@@ -9,7 +9,6 @@ int main() {
     ll k, s, qt = 0;
     cin>>k>>s;
 
-
     for (ll x = 0 ; x <= k ; x++) {
         for (ll y = 0 ; y <= k; y++) {
             ll z = s - x - y;
