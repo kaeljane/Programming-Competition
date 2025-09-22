@@ -1,9 +1,6 @@
 {
   "files.associations": {
-    "vector": "cpp",
-    "xstring": "cpp",
-    "iostream": "cpp",
-    "cmath": "cpp",
+    "deque": "cpp",
     "initializer_list": "cpp",
     "xutility": "cpp"
   }
