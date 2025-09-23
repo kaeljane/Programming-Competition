@@ -19,8 +19,9 @@ int main() {
         lista.push_back(nome);
     }
 
-    // copy(lista.begin(), lista.end(), ostream_iterator<string> (cout, " "));
-    // cout<<'\n';
+    copy(lista.begin(), lista.end(), ostream_iterator<string> (cout, " "));
+    cout<<'\n';
+
     cin>>perguntas;
     for (ll k = 0; k < perguntas; k++) {
         cin>>palavra;
@@ -28,9 +29,12 @@ int main() {
         
         // indices
         ll a = 0, b = lista.size()-1;
+
         while(a<=b) {
             ll meio = (a + b)/2; //metade
+            
             long double m_ld = (a + b)/2;
+
             if (lista[meio] == palavra) {
                 coluna = ceil((m_ld+1)/m);
                 // cout<<" "<< m_ld <<" ";

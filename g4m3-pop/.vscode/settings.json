@@ -5,6 +5,8 @@
     "iostream": "cpp",
     "cmath": "cpp",
     "initializer_list": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "iterator": "cpp",
+    "type_traits": "cpp"
   }
 }
