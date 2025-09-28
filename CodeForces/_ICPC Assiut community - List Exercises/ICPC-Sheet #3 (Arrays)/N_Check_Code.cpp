@@ -14,6 +14,8 @@ int main() {
     string S; cin>>S;
 
     // cout<<S[0]<<'\n';
+
+    
     if (1 <= A && A <= 10 && 1 <= B && B <= 10) regras_=true;
     else regras_ = false;
 
@@ -23,15 +25,15 @@ int main() {
     if (A+B+1 != S.size()) regras_ = false;
 
     if (regras_ == true){
-        for(ll i = 0; i < A+B+1 ; i++) {
-            if ((48 <= S[i] && S[i] <= 57) || S[i] == '-') regras_ = true;
+        for(ll i = 0; i < A+B+1 && i != A ; i++) {
+            if ((48 <= S[i] && S[i] <= 57)) regras_ = true;
             else {
                 regras_ = false;
                 break;
             }
         }
     }
-    if (regras_ == true) cout<<"Yes"<<'\n';
+    if (regras_) cout<<"Yes"<<'\n';
     else cout<<"No"<<'\n';
 
     return 0;
