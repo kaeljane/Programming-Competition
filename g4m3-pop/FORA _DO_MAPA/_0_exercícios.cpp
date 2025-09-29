@@ -46,29 +46,29 @@
 // 😎 http://g4m3.c073.com/problemas/P0206/ - Implementação
 
 
-
+// 😎 😎 😎 😎 😎 
 
 // 600
-// http://g4m3.c073.com/problemas/P0035/ - Competição
-// http://g4m3.c073.com/problemas/P0036/ - Aquecimento
-// http://g4m3.c073.com/problemas/P0053/ - Implementação
-// http://g4m3.c073.com/problemas/P0060/ - Implementação
-// http://g4m3.c073.com/problemas/P0062/ - Implementação
-// http://g4m3.c073.com/problemas/P0064/ - Implementação
-// http://g4m3.c073.com/problemas/P0077/ - Implementação
-// http://g4m3.c073.com/problemas/P0099/ - Strings
-// http://g4m3.c073.com/problemas/P0105/ - Implementação
-// http://g4m3.c073.com/problemas/P0111/ - Matemática -----------
-// http://g4m3.c073.com/problemas/P0121/ - Implementação
-// http://g4m3.c073.com/problemas/P0122/ - Implementação
-// http://g4m3.c073.com/problemas/P0159/ - Implementação
-// http://g4m3.c073.com/problemas/P0160/ - Matemática
-// http://g4m3.c073.com/problemas/P0163/ - Implementação
-// http://g4m3.c073.com/problemas/P0165/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0035/ - Competição
+// 😎 http://g4m3.c073.com/problemas/P0036/ - Aquecimento
+// 😎 http://g4m3.c073.com/problemas/P0053/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0060/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0062/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0064/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0077/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0099/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0105/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0111/ - Matemática
+// 😎 http://g4m3.c073.com/problemas/P0121/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0122/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0159/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0160/ - Matemática
+// 😎 http://g4m3.c073.com/problemas/P0163/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0165/ - Implementação
 // http://g4m3.c073.com/problemas/P0180/ - Implementação
 // http://g4m3.c073.com/problemas/P0187/ - Strings
 // http://g4m3.c073.com/problemas/P0190/ - Implementação
-// http://g4m3.c073.com/problemas/P0202/ - Implementação, Estrutura de Dados
+// http://g4m3.c073.com/problemas/P0202/ - Implementação, Estrutura de Dados ---------- 70
 // http://g4m3.c073.com/problemas/P0205/ - Strings
 
 
