@@ -11,6 +11,7 @@
     "system_error": "cpp",
     "ostream": "cpp",
     "iomanip": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "iosfwd": "cpp"
   }
 }
