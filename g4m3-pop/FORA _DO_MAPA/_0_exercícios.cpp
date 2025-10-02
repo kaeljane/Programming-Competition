@@ -46,7 +46,7 @@
 // 😎 http://g4m3.c073.com/problemas/P0206/ - Implementação
 
 
-// 😎 
+// 
 
 // 600
 // 😎 http://g4m3.c073.com/problemas/P0035/ - Competição
@@ -69,11 +69,11 @@
 // 😎 http://g4m3.c073.com/problemas/P0187/ - Strings
 // 😎 http://g4m3.c073.com/problemas/P0190/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0202/ - Implementação, Estrutura de Dados ---------- 70
-// http://g4m3.c073.com/problemas/P0205/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0205/ - Strings
 
 
 // 700
-// http://g4m3.c073.com/problemas/P0174/ - Implementação
+// http://g4m3.c073.com/problemas/P0174/ - Implementação, MAP
 // http://g4m3.c073.com/problemas/P0176/ - Implementação
 // http://g4m3.c073.com/problemas/P0179/ - Implementação
 // http://g4m3.c073.com/problemas/P0194/ - Strings
@@ -211,7 +211,7 @@
 // http://g4m3.c073.com/problemas/P0073/
 // http://g4m3.c073.com/problemas/P0084/
 // http://g4m3.c073.com/problemas/P0093/
-// http://g4m3.c073.com/problemas/P0103/
+// 😎 http://g4m3.c073.com/problemas/P0103/
 // http://g4m3.c073.com/problemas/P0127/
 // http://g4m3.c073.com/problemas/P0150/
 // http://g4m3.c073.com/problemas/P0200/ - Árvores

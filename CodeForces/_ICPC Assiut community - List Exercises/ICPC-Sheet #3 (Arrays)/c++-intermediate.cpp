@@ -10,30 +10,6 @@ using namespace std;
 int main() {
     ___;
     ll n; cin>>n;
-    // ll espacos = n-2;
-    // for (ll i = 0; i < n; i++) {
-    //     if (i == 0 || i == n-1) {
-    //         for(ll o = 0 ; o < n ; o++) cout<<"*";
-    //         cout<<'\n';
-    //     }
-    //     else {
-    //         for(ll u = 0 ; u < espacos; u++) {
-    //             cout<<" ";
-    //         }
-    //         cout<<'*';
-    //         cout<<'\n';
-    //         espacos--;
-    //     }
-    // }
-
-    // ll inicio = 1;
-    // for (ll i = 0; i < n; i++) {
-    //     for (ll j = 0 ; j < inicio; j++) {
-    //         cout<<"*";
-    //     }
-    //     cout<<' ';
-    //     inicio++;
-    // }
     ll numero = 1;
     vl lista_inversa;
     for (ll i = 1; i <= n ; i++) {

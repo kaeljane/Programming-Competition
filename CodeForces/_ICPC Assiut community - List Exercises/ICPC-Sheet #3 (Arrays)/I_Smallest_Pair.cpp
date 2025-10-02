@@ -49,13 +49,6 @@ int main()
                 menor_numero = array[j_[k]-1] + array[i_[k]-1] + (j_[k]-1) - (i_[k]-1);
         }
 
-        // copy(array.begin(), array.end(), ostream_iterator<int>(cout, " "));
-        // cout << '\n';
-        // copy(i_.begin(), i_.end(), ostream_iterator<int>(cout, " "));
-        // cout << '\n';
-        // copy(j_.begin(), j_.end(), ostream_iterator<int>(cout, " "));
-        // cout << '\n';
-
         cout << menor_numero << '\n';
         array.clear();
         i_.clear();
