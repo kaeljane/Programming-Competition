@@ -68,25 +68,25 @@
 // 😎 http://g4m3.c073.com/problemas/P0180/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0187/ - Strings
 // 😎 http://g4m3.c073.com/problemas/P0190/ - Implementação
-// 😎 http://g4m3.c073.com/problemas/P0202/ - Implementação, Estrutura de Dados ---------- 70
+// 😎 http://g4m3.c073.com/problemas/P0202/ - Implementação, Estrutura de Dados
 // 😎 http://g4m3.c073.com/problemas/P0205/ - Strings
 
 
 // 700
-// http://g4m3.c073.com/problemas/P0174/ - Implementação, MAP
-// http://g4m3.c073.com/problemas/P0176/ - Implementação
-// http://g4m3.c073.com/problemas/P0179/ - Implementação
-// http://g4m3.c073.com/problemas/P0194/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0174/ - Implementação, Strings
+// 😎 http://g4m3.c073.com/problemas/P0176/ - Implementação, Strings
+// 😎 http://g4m3.c073.com/problemas/P0179/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0194/ - Strings, reverse()
 
 
 // 800
-// http://g4m3.c073.com/problemas/P0024/
-// http://g4m3.c073.com/problemas/P0033/
-// http://g4m3.c073.com/problemas/P0037/
-// http://g4m3.c073.com/problemas/P0063/
-// http://g4m3.c073.com/problemas/P0065/
-// http://g4m3.c073.com/problemas/P0070/
-// http://g4m3.c073.com/problemas/P0096/
+// 😎 http://g4m3.c073.com/problemas/P0024/ - Implementação, Strings, Matemática Basica
+// 😎 http://g4m3.c073.com/problemas/P0033/ - Implementação, MAP Básico
+// 😎 http://g4m3.c073.com/problemas/P0037/ - Implementação basic
+// 😎 http://g4m3.c073.com/problemas/P0063/ - Implementação basic
+// 😎 http://g4m3.c073.com/problemas/P0065/ - Implementação basic
+// 😎 http://g4m3.c073.com/problemas/P0070/ - Implementação basic
+// 😎 http://g4m3.c073.com/problemas/P0096/ - Implementação basic, Matemática Basica
 // http://g4m3.c073.com/problemas/P0098/
 // 😎 http://g4m3.c073.com/problemas/P0116/
 // http://g4m3.c073.com/problemas/P0119/

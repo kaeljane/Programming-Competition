@@ -12,6 +12,9 @@
     "ostream": "cpp",
     "iomanip": "cpp",
     "cmath": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "limits": "cpp",
+    "cstdlib": "cpp",
+    "exception": "cpp"
   }
 }
