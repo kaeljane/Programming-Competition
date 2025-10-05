@@ -6,61 +6,34 @@
 #define vd vector<long double>
 #define vll vector<vector<long long>>
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 02/10/2025 by Kaeljane
+// 03/10/2025 by Kaeljane
 using namespace std;
 
 int main() {
     ___
     string numero; cin>>numero;
-    ll numero__ = stoll(numero);
-    ll tamanho = numero.size();
-    ll soma=0;
-    ll soma_aux=0;
-    string aux = "", aux_2 = "";
-    if (tamanho % 3 == 0) {
-        cout << "é divisivel por 3" << '\n';
-        for ( ll i = 0; i < tamanho; i++) {
-            aux.push_back(numero[i]);
-
-            if (aux.size() == tamanho/3) {
-                soma += stoll(aux);
-                aux = "";
-            }
-        }
-        soma_aux = soma;
-    }
-    else {
-        ll maior = ceil(tamanho/3.0);
-        for ( ll i = 0; i < tamanho-1; i++) {
-            aux.push_back(numero[i]);
-            soma_aux = soma;
-            
-            if (aux.size() == maior) {
-                soma += stoll(aux);
-                cout << "Soma Auxiliar: " << aux << '\n';
-                aux = "";
-                
-            }
-
-            for ( ll j = 0; j < tamanho && (j != i && j != i-1); j++) {
-                aux_2.push_back(numero[j]);
-
-                if (aux.size() == tamanho/3) {
-                    soma += stoll(aux_2);
-                    aux = "";
-                    if (soma >= soma_aux) soma_aux = soma;
-                }
-            }
-        }
-
+    string aux, aux_2 = "";
+    ll tam_sub = numero.size()-2;
+    ll soma_aux = 0;
+    ll soma = INT_MIN;
     
+    for (ll i = 0 ; i < numero.size() - tam_sub+1; i++){
+        aux = numero.substr(i, tam_sub);
+        soma_aux += stoll(aux);
 
-
-
+        for (ll j = 0; j < numero.size(); j++){
+            if (j<i || j>=i+tam_sub){
+                soma_aux += numero[j] - '0';
+                aux_2 = "";
+            }
+        }
+        if (soma_aux >= soma) {
+            soma = soma_aux;
+        }
+        aux = "";
+        soma_aux = 0;
     }
-
-
-    cout << soma_aux << '\n';
+    cout << soma << '\n';
 
     return 0;
 }

@@ -8,8 +8,8 @@
 // 400
 // 😎 http://g4m3.c073.com/problemas/P0034/ - Aquecimento
 // 😎 http://g4m3.c073.com/problemas/P0042/ - Implementação
-// 😎 http://g4m3.c073.com/problemas/P0050/
-// 😎 http://g4m3.c073.com/problemas/P0061/
+// 😎 http://g4m3.c073.com/problemas/P0050/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0061/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0067/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0083/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0089/ - Implementação
@@ -27,9 +27,8 @@
 // 😎 http://g4m3.c073.com/problemas/P0201/ - Implementação
 // 😎 http://g4m3.c073.com/problemas/P0209/ - Strings
 // 😎 http://g4m3.c073.com/problemas/P0210/ - Matemática
+// 😎 http://g4m3.c073.com/problemas/P0228/ - Implementação (I/O)
 
-
-//
 
 // 500
 // 😎 http://g4m3.c073.com/problemas/P0022/
@@ -87,8 +86,8 @@
 // 😎 http://g4m3.c073.com/problemas/P0065/ - Implementação basic
 // 😎 http://g4m3.c073.com/problemas/P0070/ - Implementação basic
 // 😎 http://g4m3.c073.com/problemas/P0096/ - Implementação basic, Matemática Basica
-// http://g4m3.c073.com/problemas/P0098/
-// 😎 http://g4m3.c073.com/problemas/P0116/
+// 😎 http://g4m3.c073.com/problemas/P0098/ - Implementacão, String chatinha
+// 😎 http://g4m3.c073.com/problemas/P0116/ - Matemática basica, strings
 // http://g4m3.c073.com/problemas/P0119/
 // http://g4m3.c073.com/problemas/P0123/
 // http://g4m3.c073.com/problemas/P0137/
@@ -98,6 +97,8 @@
 // http://g4m3.c073.com/problemas/P0199/ - Estruturas de Dados
 // http://g4m3.c073.com/problemas/P0213/ - Matrizes
 // 😎 http://g4m3.c073.com/problemas/P0224/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0232/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0227/ - Geometria Basica
 
 // 900
 // http://g4m3.c073.com/problemas/P0197/ - Ordenação
@@ -160,6 +161,7 @@
 // http://g4m3.c073.com/problemas/P0216/ - Two Pointers
 // http://g4m3.c073.com/problemas/P0221/ - Grafos
 // http://g4m3.c073.com/problemas/P0226/ - Busca Ternária
+// http://g4m3.c073.com/problemas/P0234/ - Matemática
 
 // 1300
 // http://g4m3.c073.com/problemas/P0087/
@@ -193,6 +195,7 @@
 // http://g4m3.c073.com/problemas/P0196/ - Árvores
 // http://g4m3.c073.com/problemas/P0212/ - Greedy
 // http://g4m3.c073.com/problemas/P0223/ - Grafos
+// 😎 http://g4m3.c073.com/problemas/P0236/ - Binary Search (nao usei)
 
 
 // 1500
@@ -201,6 +204,7 @@
 // http://g4m3.c073.com/problemas/P0142/
 // http://g4m3.c073.com/problemas/P0154/
 // http://g4m3.c073.com/problemas/P0157/
+// http://g4m3.c073.com/problemas/P0229/ - Árvores
 
 // 1600
 // http://g4m3.c073.com/problemas/P0038/
@@ -215,6 +219,7 @@
 // http://g4m3.c073.com/problemas/P0127/
 // http://g4m3.c073.com/problemas/P0150/
 // http://g4m3.c073.com/problemas/P0200/ - Árvores
+// http://g4m3.c073.com/problemas/P0233/ - Força Bruta
 
 // 1700
 // http://g4m3.c073.com/problemas/P0169/ - Matemática, Geometria, Teoria dos Números
@@ -236,9 +241,11 @@
 // http://g4m3.c073.com/problemas/P0085/
 // http://g4m3.c073.com/problemas/P0118/
 // http://g4m3.c073.com/problemas/P0151/
+// http://g4m3.c073.com/problemas/P0231/ - Estruturas de Dados
 
 // 2100
 // http://g4m3.c073.com/problemas/P0138/
+// http://g4m3.c073.com/problemas/P0235/ - Árvores
 
 // 2200
 // http://g4m3.c073.com/problemas/P0030/
@@ -268,6 +275,7 @@
 // 3200
 // http://g4m3.c073.com/problemas/P0109/
 // http://g4m3.c073.com/problemas/P0182/ - Estruturas de Dados
+// http://g4m3.c073.com/problemas/P0230/ - Grafos
 
 
 // 4400
