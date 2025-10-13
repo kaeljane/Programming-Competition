@@ -88,14 +88,14 @@
 // 😎 http://g4m3.c073.com/problemas/P0096/ - Implementação basic, Matemática Basica
 // 😎 http://g4m3.c073.com/problemas/P0098/ - Implementacão, String chatinha
 // 😎 http://g4m3.c073.com/problemas/P0116/ - Matemática basica, strings
-// http://g4m3.c073.com/problemas/P0119/
-// http://g4m3.c073.com/problemas/P0123/
-// http://g4m3.c073.com/problemas/P0137/
-// http://g4m3.c073.com/problemas/P0162/ - Strings
+// 😎 http://g4m3.c073.com/problemas/P0119/ - Implementação
+// http://g4m3.c073.com/problemas/P0123/ - Implementação
+// 😎 http://g4m3.c073.com/problemas/P0137/ - Matemática basica (multiplicação)
+// 😎 http://g4m3.c073.com/problemas/P0162/ - Strings, map
 // http://g4m3.c073.com/problemas/P0164/ - Implementação
 // http://g4m3.c073.com/problemas/P0170/ - Implementação
-// http://g4m3.c073.com/problemas/P0199/ - Estruturas de Dados
-// http://g4m3.c073.com/problemas/P0213/ - Matrizes
+// 😎 http://g4m3.c073.com/problemas/P0199/ - Estruturas de Dados, String(getline)
+// 😎 http://g4m3.c073.com/problemas/P0213/ - Matriz 
 // 😎 http://g4m3.c073.com/problemas/P0224/ - Strings
 // 😎 http://g4m3.c073.com/problemas/P0232/ - Strings
 // 😎 http://g4m3.c073.com/problemas/P0227/ - Geometria Basica
