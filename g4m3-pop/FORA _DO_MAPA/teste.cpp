@@ -23,20 +23,38 @@ int kadane(){
 
     return 0;
 }
+int busca_binaria(){
+    vl lista = {1, 2, 3, 4, 5, 6, 6, 7, 8, 9};
+    ll n = lista.size();
+    ll valor_procurado; cin>>valor_procurado;
+
+    // iterador, indice
+    auto it = lower_bound(lista.begin(), lista.end(), valor_procurado);
+    auto k = it - lista.begin();
+
+    if (k < n && lista[k] == valor_procurado) {
+        cout << valor_procurado << " encontrado no indice " << k << '\n';
+    }
+    else cout << valor_procurado << " não encontrado " << '\n';
+
+    // --------------------------------------------------------------------
+    // qt de elementos que possui aquele valor na lista
+    auto a = lower_bound(lista.begin(), lista.end(), valor_procurado);
+    auto b = upper_bound(lista.begin(), lista.end(), valor_procurado);
+    
+    cout << b-a << '\n';
+
+    // --------------------------------------------------------------------
+    // qt de elementos que possui aquele valor na lista
+    auto r = equal_range(lista.begin(), lista.end(), valor_procurado);
+    cout << r.second-r.first << '\n';
+}
 
 int main() {
     ___
-    // Se x não existe, o ponteiro aponta para o primeiro elemento que é maior que x.
-    // Se x for maior que todos os elementos, o ponteiro aponta para array + n (uma posição depois do fim).
-    vl lista = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-    ll n = lista.size();
 
-    // auto k = lower_bound(lista, lista+n, 5) - lista;
-    auto k = lower_bound(lista,lista+n,5)-lista;
-    if (k < n && lista[k] == 5) {
-         
-    }
-
+    
+    
 }
 
 
