@@ -17,7 +17,24 @@ bool ok(int x) {
 
 int main() {
     ___
-    
+    // essa busca nao é feito atraves de listas, ela pegara uma funcao e vai analisar a partir de quando ela é verdadeira
+    ll left = 0;
+    ll right = 100;
+    ll ans = -1;
+
+    while (left <= right) {
+        ll mid = left + (right - left) / 2;
+        
+        if (ok(mid)) {
+            ans = mid;
+            right = mid - 1;
+        }
+        else {
+            left = mid + 1;
+        }
+    }
+
+    cout << "O menor valor 'k' e: " << ans << '\n';
 
     return 0;
 }

@@ -52,8 +52,16 @@ int busca_binaria(){
 
 int main() {
     ___
+    set<int> conj = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+    auto it = conj.lower_bound(2);
+    auto it2 = conj.lower_bound(10);
+    cout << *it - 1 << '\n';
+    cout << *it2 - 1 << '\n'; 
     
+    bitset<10> s(string("0010011010")); // da direita para a esquerda
+    cout << s[4] << "\n"; // 1
+    cout << s[5] << "\n"; // 0
     
 }
 
