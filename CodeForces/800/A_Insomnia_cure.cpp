@@ -9,22 +9,17 @@
 #define vll vector<vector<long long>>
 #define all(x) x.begin(), x.end()
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 18/10/2025 by Kaeljane
+// 20/10/2025 by Kaeljane
 using namespace std;
 
 void solve() {
-    ll t, n; cin>>t>>n;
-    string s; cin>>s; //bju
-    while(n--) {
-        for (ll i = 0; i < t-1; i++) {
-            if (s[i] == 'B' && s[i+1] == 'G') {
-                swap(s[i], s[i+1]);
-                i++;
-            }
-        }
+    ll k, l, m, n, d; cin>>k>>l>>m>>n>>d;
+    set<ll> c;
+    for (ll i = 1; i <= d; i++) {
+        if (i % k == 0 || i % l == 0 || i % m == 0 || i % n == 0);
+        else c.insert(i);
     }
-    cout << s << '\n';
-
+    cout << d - c.size();
 }
 int main() {
     ___

@@ -11,21 +11,29 @@
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
 // 19/10/2025 by Kaeljane
 using namespace std;
-//
+
 void solve() {
-    // determinar o número de grupos
-    ll n, ima, ref, qt=0; cin>>n;
+    ll n, qt=0, valor; cin>>n;
+    vl v; // add aqui
+    while (cin>>valor) v.push_back(valor);
+    ll M = *max_element(all(v));
+    ll m = *min_element(all(v));
+    ll ind_m;
+
+    //org o maior
     for (ll i = 0; i < n; i++) {
-        cin>>ima;
-        if (i == 0) {
-            ref = ima;
+        if (v[i] == M) {
+            for (ll j=i; j >=0 && M != v[0]; j--){
+                swap(v[j], v[j-1]);
+                qt++;
+            }
+            break;
         }
-        else if (ima != ref) {
-            qt++;
-            ref = ima;
-        }
-    } 
-    cout << ++qt << '\n';
+    }
+    for (ll i = 0; i < n; i++) {
+        if (v[i] == m) ind_m=i;
+    }
+    cout << qt + (n-1 - ind_m)<< '\n';
     
 }
 int main() {
