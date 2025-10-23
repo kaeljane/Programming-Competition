@@ -13,14 +13,13 @@
 using namespace std;
 
 void solve() {
-    ll n; cin>>n;
-    string s;
-    while(n--){
-        cin>>s;
-        transform(all(s), s.begin(), ::tolower);
-        // cout << s << '\n';
-        if (s == "yes") cout << "YES" << '\n';
-        else cout << "NO" << '\n';
+    ll t, valor; cin>>t;
+    while(t--) {
+        cin>>valor;
+        if (1900 <= valor) cout << "Division 1" << '\n';
+        else if (1600 <= valor) cout << "Division 2" << '\n';
+        else if (1400 <= valor) cout << "Division 3" << '\n';
+        else if (valor <= 1399) cout << "Division 4" << '\n';
     }
     
 }

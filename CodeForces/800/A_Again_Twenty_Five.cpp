@@ -14,14 +14,9 @@ using namespace std;
 
 void solve() {
     ll n; cin>>n;
-    string s;
-    while(n--){
-        cin>>s;
-        transform(all(s), s.begin(), ::tolower);
-        // cout << s << '\n';
-        if (s == "yes") cout << "YES" << '\n';
-        else cout << "NO" << '\n';
-    }
+    ll c = pow(5, n);
+    // qualquer numero elevado no 5 os dois ultimos numeros dele será 25, menos se elevar a a 0 ou 1.
+    cout << 25 << '\n';
     
 }
 int main() {
