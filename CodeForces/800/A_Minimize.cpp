@@ -10,33 +10,35 @@
 #define all(v) v.begin(), v.end()
 #define imp(v, t) copy(v.begin(), v.end(), ostream_iterator<t> (cout, ' '))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 22/10/2025 by Kaeljane
+// 23/10/2025 by Kaeljane
 using namespace std;
 
-void solve() {
-    ll k, r, resposta=0; cin>>k>>r;
-    ll at=k;
-    ll resto = k % 10;
-    if (resto == 5) {
-        // abs(r-resto);
-        // 0 - 2 = 2
-        // 2 é menor que 5?
-        // r = 6, 
-        if (r < (5 - 2)) r = 0;
-        else  r = 0;
-    }
-    else if (resto == 0) {
-        r=0;
-    }
-    for (int i = 1;  ; i++) {
-        if ((k * i) % 10 == r) {
-            resposta++;
-            break;
-        }
-        else resposta++;
-    }
+ll n, t, k, v, x, y, z, m=INT_MAX;
+string s, a, b, c;
+
+/* (mind) 
+    (c - a) + (b - c) 
+    (c - 1) + (2 - c)
+    Minimum value...
+
+    c==1
+    (1-1) + (2-1) = 0 + 1 == 1
+
+    c==2 
+    (2-1) + (2-2) = 1 + 0 == 1
+    (2) - 1 + 2 (- 2)
+    sobra so -a + b
     
-    cout << resposta << '\n';
+    c==3
+    (3-1) + (2-3) = 2 - (-1) == 3
+
+    quando passar do minimo estabelecido pare e imprima o menor até o momento.
+*/
+void solve() {
+    cin>>t;
+    while(cin>>x>>y) {
+        cout << -(x) + y << '\n';
+    }
     
 }
 int main() {

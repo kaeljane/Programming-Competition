@@ -10,33 +10,28 @@
 #define all(v) v.begin(), v.end()
 #define imp(v, t) copy(v.begin(), v.end(), ostream_iterator<t> (cout, ' '))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 22/10/2025 by Kaeljane
+// 23/10/2025 by Kaeljane
 using namespace std;
 
-void solve() {
-    ll k, r, resposta=0; cin>>k>>r;
-    ll at=k;
-    ll resto = k % 10;
-    if (resto == 5) {
-        // abs(r-resto);
-        // 0 - 2 = 2
-        // 2 é menor que 5?
-        // r = 6, 
-        if (r < (5 - 2)) r = 0;
-        else  r = 0;
-    }
-    else if (resto == 0) {
-        r=0;
-    }
-    for (int i = 1;  ; i++) {
-        if ((k * i) % 10 == r) {
-            resposta++;
-            break;
-        }
-        else resposta++;
-    }
+ll n, t, k, v, x, y, z;
+string s, a, b, c;
+
+/* (mind) 
+    a = n - b
+    a = 2 - b
+    a + b == 2
+    a + b == n possibilidades de numeros que dar n
+
+    a + b == 4 (3, 1) (2, 2) (1, 3)
+
+    a + b == 6 (5, 1), (4, 2), (3, 3), (2, 4), (1, 5)
     
-    cout << resposta << '\n';
+*/
+void solve() {
+    cin>>t;
+    while(cin>>n) {
+        cout << n - 1 << '\n'; 
+    }
     
 }
 int main() {
