@@ -13,16 +13,32 @@
 // 06/11/2025 by Kaeljane
 using namespace std;
 
-ll n, t, k, x, y, z;
+ll N, M, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-        
+        N M
+
+        N - > pessoas
+        M -> fotos
+
         
 */
 void solve() {
+        cin>>N>>M;
+        vll matriz(M, vl(N));
+        set<int> conj;
         
-        
+        // colocou tudo dentro das estruturas
+        for (ll i=0; i<M; i++) {
+                for (ll j=0; j<N; j++) {
+                        cin>>matriz[i][j];
+                        conj.insert(matriz[i][j]);
+                }
+        }
+
+
+
 }
 signed main() {
         ___
