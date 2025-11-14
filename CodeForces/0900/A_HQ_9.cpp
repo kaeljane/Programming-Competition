@@ -23,9 +23,15 @@ string s, a, b, c;
 void solve() {
         cin>>s;
         bool r = false;
+        // versão um pouco mais eficiente que a anterior
+        set<char> conj;
         for (ll i=0; i < s.size(); i++) {
-                if (s[i] == 'H' || s[i] == 'Q' || s[i] == '9') {r = true; break;}
+                conj.insert(s[i]);
         }
+
+        if (conj.count('H') == 1) r = true;
+        else if (conj.count('Q') == 1) r = true;
+        else if (conj.count('9') == 1) r = true;
 
         if (r) cout << "YES" << '\n';
         else cout << "NO" << '\n';
