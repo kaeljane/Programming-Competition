@@ -21,7 +21,7 @@ string s, a, b, c;
         
 */
 void solve() {
-        set<char> vogais = {'a', 'e', 'i', 'o', 'u'};
+        set<char> vogais = {'a', 'e', 'y', 'i', 'o', 'u'};
         cin>>s;
         transform(all(s), s.begin(), ::tolower);
         for (ll i=0; i<s.size(); i++) {
