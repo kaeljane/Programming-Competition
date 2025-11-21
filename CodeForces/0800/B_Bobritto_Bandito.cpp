@@ -112,7 +112,6 @@ void solveOtimizado() {
         ll d_Dir = m - d_Esq; 
 
         cout << -d_Esq << " " << d_Dir << el;
-
 }
 signed main() {
         ___
