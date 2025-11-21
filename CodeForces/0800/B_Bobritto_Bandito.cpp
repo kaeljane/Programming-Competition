@@ -103,7 +103,6 @@ void solve() {
 
                 cout << l_ << " " << r_ << '\n';
         }
-        
 }
 void solveOtimizado() {
         cin>>n>>m>>l>>r;
