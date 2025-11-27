@@ -28,52 +28,49 @@
 #define uset unordered_set
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 25/11/2025 by Kaeljane
+// 22/11/2025 by Kaeljane
 using namespace std;
- 
+
 ll MOD = 1e9 + 7;
 ll INF = 1e18 + 7;
 const int MAXN = 1e6 + 5;
- 
+
 ll n, t, k, x, y, z;
 string s, a, b, c;
- 
+
 /* (mind) 
-        1 + sqrt(n) + n
-        precisa ter tres divisores que sao esses de cima!!
+        
+        
 */
- 
-bool isPrime(ll n) {
-    if (n <= 1) return false; // 0 e 1 não são primos
-    if (n == 2) return true;  // 2 é o único par primo
-    if (n % 2 == 0) return false; 
- 
-    for (ll i = 3; i * i <= n; i += 2) {
-        if (n % i == 0) return false;
+ll get_max_suffix_sum(const vl& v) {
+    ll n = sz(v);
+    if (n == 0) return -INF; 
+
+    ll current_sum = 0;
+    ll max_suf = -INF; 
+
+    for (int i = n - 1; i >= 0; i--) {
+        current_sum += v[i];
+        max_suf = max(max_suf, current_sum);
     }
-    
-    return true;
+
+    return max_suf;
 }
- 
- 
 void solve() {
         cin>>n;
-        while (n--) {
-                cin>>x;
-                
-                ll resto = sqrt((double)(x));
-                if (resto*resto == x && x != 1 && isPrime(resto)) {
-                        cout << "YES" << el;
-                }
-                else {
-                        cout << "NO" << el;
-                }
-        }  
+        vl v(n);
+        for (ll i=0; i < n; i++) cin>>v[i];
+
+        cout << get_max_suffix_sum(v) << el;        
+
 }
 signed main() {
         ___
         t=1;
+        cin>>t;
+        while(t--)
         solve();
         
         return 0;
 }
+
