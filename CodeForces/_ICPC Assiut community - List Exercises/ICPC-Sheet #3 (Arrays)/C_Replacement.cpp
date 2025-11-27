@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define ll unsigned long long
 using namespace std;
-
+ 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -13,10 +13,10 @@ int main() {
         else if (n == 0) {array.push_back(n);}
         else {n=2; array.push_back(n);}
     }
-
+ 
     for (auto& numero : array){
         cout<<numero<<' ';
     }
-
+ 
     return 0;
 }

@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #define ll unsigned long long
 using namespace std;
-
+ 
 int main(){
     ll n, numero; cin>>n;
     vector<int> lista = {};
@@ -23,5 +23,5 @@ int main(){
     else {
         cout<<"YES"<<"\n";
     }
-
+ 
 }

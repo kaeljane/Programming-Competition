@@ -7,7 +7,7 @@
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
 // 25/09/2025 by Kaeljane
 using namespace std;
-
+ 
 int main() {
     ___;
     ll n, numero, qt = 0; cin>>n;
@@ -17,7 +17,8 @@ int main() {
         cin>>numero;
         lista.push_back(numero);
     }
-
+    // copy(lista.begin(), lista.end(), ostream_iterator<ll> (cout, " ")); cout<<'\n';
+ 
     while (continuee) {
         for (ll i = 0 ; i < n; i++) {
             if (lista[i] == 0) {
@@ -39,6 +40,6 @@ int main() {
         }
     }
     cout<<qt;
-
+ 
     return 0;
 }

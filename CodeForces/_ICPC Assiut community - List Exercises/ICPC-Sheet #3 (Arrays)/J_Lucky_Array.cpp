@@ -1,33 +1,37 @@
 #include <bits/stdc++.h>
 #define ll unsigned long long
 using namespace std;
-
+ 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    ll qt, numero, menor = 0, frequencia = 0; cin>>qt;
-    vector<int> lista;
-    while(qt--){
-        cin>>numero;
-        lista.push_back(numero);
-        if(qt == 0) break;
+    int n;
+    std::cin >> n;
+ 
+ 
+    std::vector<int> a(n);
+    for (int i = 0; i < n; ++i) {
+        std::cin >> a[i];
     }
-
-    for (int i = 0; i < lista.size(); i++) {
-        if (i==0) {menor=lista[i];}
-        else {
-            if (menor > lista[i]) menor = lista[i];
+ 
+ 
+    int menor_numero = std::numeric_limits<int>::max(); 
+    for (int i = 0; i < n; ++i) {
+        menor_numero = std::min(menor_numero, a[i]);
+    }
+ 
+    int contagem = 0;
+    for (int i = 0; i < n; ++i) {
+        if (a[i] == menor_numero) {
+            contagem++;
         }
     }
-
-    for (auto& x : lista) {
-        if (x == menor) {frequencia++;}
+ 
+    if (contagem % 2 != 0) {
+        std::cout << "Lucky" << std::endl;
+    } else {
+        std::cout << "Unlucky" << std::endl;
     }
-
-
-    if (frequencia % 2 == 0) cout<<"Unlucky"<<'\n';
-    else cout<<"Lucky"<<'\n';
-
-
+ 
     return 0;
 }

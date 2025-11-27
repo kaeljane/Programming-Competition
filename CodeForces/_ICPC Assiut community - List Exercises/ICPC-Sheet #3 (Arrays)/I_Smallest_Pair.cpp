@@ -3,24 +3,24 @@
 #define vi vector<int>
 #define vl vector<long long>
 using namespace std;
-
+ 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
+ 
     ll t, n, elementos;
     cin >> t;
-
+ 
     while (t--)
     {
         long long menor_numero = LLONG_MAX;
         vl array;
         vi i_;
         vi j_;
-
+ 
         cin >> n;
-
+ 
         for (ll u = 0; u < n; u++)
         {
             cin >> elementos;
@@ -30,7 +30,7 @@ int main()
         for (ll i = 1; i <= n; i++)
         {
             // cout<<"passou por aqui"<<'\n';
-
+ 
             for (ll j = 2; j <= n; j++)
             {
                 // cout<<"i= "<<i<<" j= "<<j<<'\n';
@@ -48,7 +48,14 @@ int main()
             if (menor_numero > array[j_[k]-1] + array[i_[k]-1] + (j_[k]-1) - (i_[k]-1))
                 menor_numero = array[j_[k]-1] + array[i_[k]-1] + (j_[k]-1) - (i_[k]-1);
         }
-
+ 
+        // copy(array.begin(), array.end(), ostream_iterator<int>(cout, " "));
+        // cout << '\n';
+        // copy(i_.begin(), i_.end(), ostream_iterator<int>(cout, " "));
+        // cout << '\n';
+        // copy(j_.begin(), j_.end(), ostream_iterator<int>(cout, " "));
+        // cout << '\n';
+ 
         cout << menor_numero << '\n';
         array.clear();
         i_.clear();

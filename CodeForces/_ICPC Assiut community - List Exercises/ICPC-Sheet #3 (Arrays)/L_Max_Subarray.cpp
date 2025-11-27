@@ -4,7 +4,7 @@
 #define vl vector<long long>
 # define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
 using namespace std;
-
+ 
 int main() {
     ___;
     ll T, n, e; cin>>T;
@@ -27,7 +27,7 @@ int main() {
         // cada tamanho da subarray
         for (int i = 1; i <= n; i++) { 
             vl lista_backup = lista;
-
+ 
             for (int j = 0; j<deslocamento; j++) {
                 // cada elemento desse deslocamento do subarray
                 // cout<<lista_backup[j]<<' ';
@@ -48,12 +48,15 @@ int main() {
         }
         copy(resposta.begin(), resposta.end(), ostream_iterator<ll> (cout, " "));
         // copy(lista.begin(), lista.end(), ostream_iterator<ll> (cout, " "));
-
+ 
         lista.clear();
         resposta.clear();
         if(T==0)break;
         cout<<'\n';
     }
     
+    
+    
+ 
     return 0;
 }

@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "deque": "cpp",
-    "initializer_list": "cpp",
-    "xutility": "cpp",
-    "cstdlib": "cpp"
-  }
-}
