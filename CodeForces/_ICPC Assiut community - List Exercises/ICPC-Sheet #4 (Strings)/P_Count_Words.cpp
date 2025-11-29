@@ -31,7 +31,7 @@
 // 27/11/2025 by Kaeljane
 using namespace std;
 
-ll MOD = 1e9 + 7; // ele é primo
+ll MOD = 1e9 + 7;
 ll INF = 1e18 + 7;
 const int MAXN = 1e6 + 5;
 // matriz vll mat(n, vl(m, 0))
@@ -44,7 +44,25 @@ string s, a, b, c;
     
 */
 void solve() {
-    
+    string s;
+    getline(cin, s);
+
+    ll contador = 0;
+    bool dentroDaPalavra = false;
+
+    for (char c : s) {
+        if (isalpha(c)) { 
+            if (!dentroDaPalavra) {
+                contador++;
+                dentroDaPalavra = true;
+            }
+        } 
+        else {
+            dentroDaPalavra = false;
+        }
+    }
+
+    cout << contador << el;
     
 }
 signed main() {
