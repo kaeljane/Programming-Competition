@@ -28,33 +28,33 @@
 #define uset unordered_set
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 22/11/2025 by Kaeljane
+// 29/11/2025 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
 ll INF = 1e18 + 7;
+const int MAXN = 1e6 + 5;
+// matriz vll mat(n, vl(m, 0))
 
 ll n, t, k, x, y, z, l, r;
-string s;
+string s, a, b, c;
 
 /* (mind) 
-        
-        
+    
+    
 */
-
-
 void solve() {
-        cin>>l>>r;
-        if (2*l > r) cout << -1 << " " << -1 << el;
-        else cout << l << " " << l*2 << el;
+    cin>>l>>r;
 
+    if (l*2 > r) cout << -1 << " " << -1 << el;
+    else cout << l << " " << l * 2 << el;
+    
 }
 signed main() {
-        ___
-        t=1;
-        cin>>t;
-        while(t--)
-        solve();
-        
-        return 0;
+    ___
+    cin>>t;
+    while(t--)
+    solve();
+    
+    return 0;
 }
