@@ -28,7 +28,7 @@
 #define uset unordered_set
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 30/11/2025 by Kaeljane
+// 01/12/2025 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
@@ -40,39 +40,40 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-    formula
+    
     
 */
-
-ll binPow(ll a, ll b, ll m) {
-    a %= m;
-    ll res = 1;
-    while (b > 0) {
-        if (b & 1) {
-            res = (res * a) % m;
-        }
-        a = (a*a) % m;
-        b >>= 1;
-    }
-    return res;
-}
-
 void solve() {
-    cin>>n;
-    // versao hard nao precisa disso, colocando so par treinar
-    cout << binPow(5, n, 100) << el;
-    
+    cin>>n>>k;
+    ll kZeru = k-1;
+    if (n % 2 == 0) {
+        cout << kZeru % n + 1 << el;
+    }
+    else {
+        if (k < ceil((double)n/2)){
+            cout << k << el;
+        }
+        else {
+            if (k / n == 0) {
+                cout << k + 1 << el;
+            }
+            else {
+                ll meio = n/2;
+                ll resto = kZeru/meio;
 
-    // a resposta sempre será 25
-    // cout << 25 << el;
+                cout << ((kZeru + resto) % n + 1) << el;
+
+            }
+        }
+    }
+
+    
 }
 signed main() {
     ___
-    t=1;
-    //cin>>t;
-    //while(t--)
+    cin>>t;
+    while(t--)
     solve();
     
     return 0;
 }
-
