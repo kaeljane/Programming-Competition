@@ -34,7 +34,7 @@ using namespace std;
 ll MOD = 1e9 + 7;
 ll INF = 1e18 + 7;
 const int MAXN = 1e6 + 5;
-// matriz vll mat(n, vl(m, 0))
+// matriz vll mat(n, vl(m, 0)).
 
 ll n, t, k, x, y, z;
 string s, a, b, c;
