@@ -38,15 +38,27 @@ string s, c;
 void solve() {
     cin>>n>>m>>a>>b;
     
-    ll ans = INF;
+    // ll ans = INF;
 
-    for (ll x = 0; x <= n; x++) {
-        for (ll y = 0; y <= n; y++) {
-            if (x + y*m >= n) {
-                ans = min(ans, a*x + b*y);
-            }
-        }
+    // for (ll x = 0; x <= n; x++) {
+    //     for (ll y = 0; y <= n; y++) {
+    //         if (x + y*m >= n) {
+    //             ans = min(ans, a*x + b*y);
+    //         }
+    //     }
+    // }
+
+    // O(1)
+    if (m * a <= b) {
+        cout << n * a << el;
+        return;
     }
+
+    // caso o tick especial seja bom
+    ll ans = (n / m) * b;
+    ll resto = n % m; // completar com o unit
+    ans += min(resto * a, b);
+     
 
     cout << ans << el;
     
