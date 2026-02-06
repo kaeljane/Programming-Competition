@@ -20,7 +20,7 @@
 #define el '\n'
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 01/02/2026 by Kaeljane
+// 06/02/2026 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
@@ -32,13 +32,55 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
+    substituir a1 por x e aj por y
+
+    ai | aj = x | y
+
+    essa operacao pode ser feita diversas vezes
+
+    qual é a soma minima possível da array?
+
+    1111111 ai | aj
+
+    1010101
+    0101010
+
+    3
+    1 3 2    -> 3 é a soma minima que foi encontrada
+
+    0001 - 1
+    0011 - 3
+    0010 - 2
     
+    1 | 3 = 3 (deu o maior valor)
+    1 | 2 = 2 (deu o maior valor)
+    2 | 3 = 3 (deu o maior valor)
+
+    sempre vai dar um valor menor, nao necessariamente o maior valor entre eles
+
+    olhando a nota:
+    [1, 0, 2] -> é possivel deixar a array assim
+    o maior valor sumiu
+    1 | 3
+
+    Aprendendo com a questão:
+    Queremos minimizar a soma
+
+
     
 */
 void solve() {
     cin>>n;
-    vl v(n); for (ll i = 0; i < n; i++) cin>>v[i];
+    vl v(n); 
+    for (ll i = 0; i < n; i++) cin>>v[i];
     
+    ll sum = v[0];
+
+    for (ll i = 1; i < n; i++) {
+        sum |= v[i];
+    }
+
+    cout << sum << el;
     
 }
 signed main() {
