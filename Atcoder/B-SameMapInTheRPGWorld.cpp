@@ -37,8 +37,8 @@ ll INF = 1e18 + 7;
 const int MAXN = 1e6 + 5;
 // 
 
-ll n, t, k, x, y, z;
-string s, a, b, c;
+ll n, t, k, x, y, z, s;
+string a, b, c;
 
 /* (mind) 
     
@@ -116,6 +116,72 @@ void solve() {
 
     
     
+}
+
+void solve2() {
+    ll h, w;
+     
+    vector<string> A(h), B(h);
+
+    for(ll i = 0; i < h; i++) cin>>A[i];
+    for(ll i = 0; i < w; i++) cin>>B[i];
+
+    for (ll s = 0; s < h; s++) {
+        for (ll t = 0; t < w; t++) {
+
+            bool equal = true;
+            for (ll i = 0; i < h; i++) {
+                for (ll j = 0; j < w; j++) {
+                    if (A[(i+s) % h][(j + t) % w] != B[i][j]) {
+                        equal = false;
+                        i = h;
+                        break;
+                    }
+                }
+            }
+
+            if (equal) {
+                cout << "Yes" << el;
+                return;
+            }
+        }
+    }
+    cout << "No" << el;
+
+
+}
+
+
+void solve3() {
+    ll h, w;
+    cin>>h>>w;
+    vector<string> A(h), B(w);
+
+    for (ll i = 0; i < h; i++) cin>>A[i];
+    for (ll i = 0; i < w; i++) cin>>B[i];
+
+
+    for (ll s = 0; s < h; s++) {
+        for (ll t = 0; t < w; t++) {
+
+            bool equal = true;
+            for (ll i = 0; i < h; i++) {
+                for (ll j = 0; j < w; j++) {
+                    if (A[(s+i) % h][(t+j) % w] != B[i][j]) {
+                        equal = false;
+                        i = h;
+                        break;
+                    }
+                }
+            }
+            if (equal) {
+                cout << "YES" << el;
+                return;
+            }
+        }
+    }
+    cout << "NO" << el;
+
 }
 signed main() {
     ___

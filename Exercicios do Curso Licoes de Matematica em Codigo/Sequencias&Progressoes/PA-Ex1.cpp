@@ -1,3 +1,4 @@
+// ------------ Discipline is remembering who you said you wanted to be^^ ------------
 #include <bits/stdc++.h>
 #define ll long long
 #define ld long double
@@ -28,7 +29,7 @@
 #define uset unordered_set
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 03/12/2025 by Kaeljane
+// 26/12/2025 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
@@ -40,43 +41,24 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-    |Ai - Aj <= 1|
-    if Ai == Aj -> remova qualquer um
-
-    Array -> 1 elemento
     
-    remover um elemento de um vetor -> v.erase(v.begin() + i);
+    
 */
 void solve() {
-    cin>>n;
-    vl lista(n); 
-    for (ll i = 0; i < n; i++) {
-        cin>>lista[i];
-    }
+    ll An;
+    cin>>An;
+    ll r = 4;
+    ll A1 = -7;
+    // ll An = A1 + (n - 1)*r;
+    ll n = (An - A1)/r + 1; 
 
-    if (lista.size() == 1) {cout << "YES" << el; return;}
-    sort(all(lista));
-
-    ll l=0, r = lista.size()-1;
-    while (l < r) {
-        if (abs(lista[l] - lista[r]) <= 1) {
-            lista.erase(lista.begin() + l);
-            r = lista.size()-1;
-        }
-        else {
-            r--;
-        }
-
-    }
-
-    if (lista.size() == 1) cout << "YES" << el;
-    else cout << "NO" << el;
+    cout << n << el;
     
 }
 signed main() {
     ___
-    cin>>t;
-    while(t--)
+    // cin>>t;
+    // while(t--)
     solve();
     
     return 0;

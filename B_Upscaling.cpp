@@ -28,7 +28,7 @@
 #define uset unordered_set
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 22/11/2025 by Kaeljane
+// 06/12/2025 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
@@ -36,32 +36,34 @@ ll INF = 1e18 + 7;
 const int MAXN = 1e6 + 5;
 // matriz vll mat(n, vl(m, 0))
 
-ll n, m, t, k, x, y, z;
+ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-        
-        
+    
+    
 */
 void solve() {
-        cin>>n>>m;
-        vll mat(n, vl(m, 0));
-        for (ll i = 0; i < n; i++) {
-                for (ll j = 0; j < m; j++) {
-                        cin>>mat[i][j];
-                }
+    cin>>n;
+    // linha
+    ll qt = 0;
+    vll mat(n*2, vl(n*2, 0));
+    for (ll i=1; i <= n*2; i++) {
+        // linha
+        if (qt == 2) {
+            qt = 0;
         }
-        
-        // está em 1-based os numeros seguintes... cuidado!
-        
-
+        for (ll j=1; j <= n*2 ; j++) {
+            if ()
+        }
+    }
+    
 }
 signed main() {
-        ___
-        t=1;
-        //cin>>t;
-        //while(t--)
-        solve();
-        
-        return 0;
+    ___
+    cin>>t;
+    while(t--)
+    solve();
+    
+    return 0;
 }
