@@ -151,6 +151,22 @@ ll binPow(ll a, ll b, ll m) {
     return res;
 }
 
+void minusculo(string &s) {
+    transform(s.begin(), s.end(), s.begin(), [](unsigned char c) {return tolower(c); });
+
+}
+
+void minusculo(string &s) {
+    transform(s.begin(), s.end(), s.begin(), [](unsigned char c) {return tolower(c);});
+
+}
+
+void minusculo(string &s) {
+    transform(s.begin(), s.end(), s.begin(), [](unsigned char c) {return tolower(c);});
+
+}
+
+
 int main () {
 
 
