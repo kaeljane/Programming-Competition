@@ -80,7 +80,41 @@ void solve() {
 
     cout << ans/2 << el;
     
-    
+}
+
+void solve2(){
+    ll n, m;
+    cin>>n>>m;
+
+    vector<vector<int>> a(m, vector<int>(n));
+    for (ll i = 0; i < m; i++) {// alunos
+        for (ll j = 0; j < n; j++) cin>>a[i][j];
+    }
+
+    // matriz de adjacencia (matriz inicialmente c/ tudo false)
+    vector<vector<bool>> sat_together(n + 1, vector<bool>(n+1, false));
+
+    for (ll i = 0; i < m; i++) { // cada linha
+        for (ll j = 0; j < m; j++) {
+            ll p1 = a[i][j];
+            ll p2 = a[i][j+1];
+            
+            sat_together[p1][p2] = true;
+            sat_together[p2][p1] = true;
+        }
+    }
+
+    ll ans = 0;
+
+    for (ll i = 1; i <= n; i++) {
+        for (ll j = i + 1; j <= n; j++) {
+            if (sat_together[i][j] == false) {
+                ans++;
+            } 
+        }
+    }
+    cout << ans << el;
+
 }
 signed main() {
     ___

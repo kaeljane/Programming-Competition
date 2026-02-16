@@ -167,7 +167,7 @@ void solve3() {
             bool equal = true;
             for (ll i = 0; i < h; i++) {
                 for (ll j = 0; j < w; j++) {
-                    if (A[(s+i) % h][(t+j) % w] != B[i][j]) {
+                    if (A[(s+i) % h][(t+j) % w] != B[i][]) {
                         equal = false;
                         i = h;
                         break;
