@@ -49,7 +49,7 @@ void solve() {
 
     if (min > 9) cout << hora << ":" << min << el;
     else cout << hora << ":0" << min << el;
-
+\
 }
 signed main() {
     ___
