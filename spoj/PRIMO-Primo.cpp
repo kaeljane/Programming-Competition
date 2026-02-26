@@ -56,7 +56,7 @@ void sieve(ll n) {
 void solve() {
     cin>>n;
     if (is_prime[n]) cout << "SIM" << el;
-    else cout << "NO" << el; 
+    else cout << "NAO" << el; 
     
 }
 signed main() {
