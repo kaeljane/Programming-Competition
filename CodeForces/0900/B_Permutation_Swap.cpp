@@ -49,8 +49,6 @@ void solve() {
         gcd = __gcd(abs(x.first - x.second), gcd);
     }
     cout << gcd << el;
-    // logica
-    // vector<ii> vetor;
 
     
 }
