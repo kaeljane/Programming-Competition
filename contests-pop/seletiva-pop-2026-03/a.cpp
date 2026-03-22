@@ -28,7 +28,7 @@ void solve(){
     sort(v.begin(), v.end());
 
     cout << v[med] << el;
-
+    
 
 }
 signed main() {
