@@ -23,11 +23,23 @@ string s, a, b, c;
     y -> numero de gravetos necessários para comprar um carvão.
     k -> numero de tochas que você precisa
 
-    18m 08s (ja tinha lido ela anteriormente)
+    18m 08s
+    6m 0s
+
 
 */
+void solve() {
+    cin>>x>>y>>k;
 
-void solve(){
+    ll num = k*y + k - 1;
+    ll den = x - 1; // lucro vai comprar x mas vai dar 1 em troca
+
+    cout << (num + den - 1) / den + k << el;
+
+
+}
+
+void solve1(){
     cin>>x>>y>>k;
     ll qtDeCarvaoQuePrecisamos = k;
     ll trocarGravetosPorCarvao = k * y;
@@ -37,7 +49,6 @@ void solve(){
     ll ans = ceil((long double)(qtDeGravetosNecessarios -1) / (long double)(x - 1));
 
     cout << ans + k << el;
-    
     
 }
 signed main() {
