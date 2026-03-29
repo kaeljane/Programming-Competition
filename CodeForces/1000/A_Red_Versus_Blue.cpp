@@ -15,6 +15,9 @@ string s, a, c;
 
 /* (mind )
     
+    solve2()
+    revisando pra ver se entendi 
+    5m e 28sec
 */
 
 void solve(){
@@ -39,6 +42,27 @@ void solve(){
     cout << el;
 
     
+    
+}
+
+void solve2(){
+    cin>>n>>r>>b;
+
+    ll rPorBloco = r / (b+1); // principio da casa dos pombos
+    ll resto = r % (b+1);
+
+    for (ll i = 0; i < b+1; i++) { // passando por cada bloco 
+        ll qtR = rPorBloco + (resto > 0 ? 1 : 0);
+        for (ll j = 0; j < qtR; j++) cout << "R";
+        
+        if (resto > 0) resto--;
+
+        if (i < b) {
+            cout << "B";
+        }
+    }
+    cout << el;
+
     
 }
 signed main() {
