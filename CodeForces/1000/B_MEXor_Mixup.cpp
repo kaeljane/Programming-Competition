@@ -21,42 +21,53 @@
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define uset unordered_set
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// xx/xx/2026 by Name
+// 11/04/2026 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7; // 998244353;
 ll INF = 1e18 + 7;
 const int MAXN = 1e5 + 5;
 // matriz vll mat(n, vl(m, 0))
+// I can it
 
-ll n, t, k, x, y, z;
-string s, a, b, c;
+ll n, t, k, x, y, z, a, b;
+string s, c;
 
 /* (mind) 
+    1h 28m 42s
     
+    muito dificil visualizar 
     
 */
 
-ll __lcm(ll a, ll b) {
-    return a / __gcd(a, b) * b;
+ll xor_sum(ll n) {
+    if (n % 4 == 0) return n;
+    if (n % 4 == 1) return 1;
+    if (n % 4 == 2) return n + 1;
+    return 0; // n % 4 == 0
 }
 
 void solve() {
-    // cin>>n;
+    cin>>a>>b;
+
+    x = xor_sum(a-1);
+    ll y = x ^ b;
+    if (y == 0) {
+        cout << a << el;
+    }
+    else if (y != 0 && y != a) {
+        cout << a + 1 << el; // a + b
+    }
+    else if (y == a){
+        cout << a + 2 << el;
+    }
     
-    ll calc = 2^3^4;
-    ll calc2 = 2^5;
-
-    cout << calc << el;
-    cout << calc2 << el;
-
-
     
 }
 signed main() {
     ___
-    // cin>>t;
-    // while(t--)
+    cin>>t;
+    while(t--)
     solve();
     
     return 0;
