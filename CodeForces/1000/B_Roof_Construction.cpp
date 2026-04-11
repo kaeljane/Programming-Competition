@@ -21,7 +21,7 @@
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define uset unordered_set
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// xx/xx/2026 by Name
+// 11/04/2026 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7; // 998244353;
@@ -33,30 +33,38 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
+    o custo de construção de pilares consecutivos é igual ao valor máximo do XOR bit a bit 
+    (bitwise XOR) das alturas de todos os pares de pilares adjacentes
     
-    
+    15m
+
 */
-
-ll __lcm(ll a, ll b) {
-    return a / __gcd(a, b) * b;
-}
-
 void solve() {
-    // cin>>n;
+    cin>>n;
     
-    ll calc = 2^3^4;
-    ll calc2 = 8^9;
-
-    cout << calc << el;
-    cout << calc2 << el;
-
-
+    ll aux = 1; 
+    ll msb = 63 - __builtin_clzll(n-1);
+    ll pot = pow(2, msb);
     
+    for (ll i = 1; i >= 0; i++) {
+        cout << pot - i << " ";
+        if (pot - i <= 0) break;
+    }
+
+    for (ll i = 0; i >= 0; i++) {
+        if (pot + i >= n) break;
+        cout << pot + i << " ";
+    }
+
+    cout << el;
+
+
+
 }
 signed main() {
     ___
-    // cin>>t;
-    // while(t--)
+    cin>>t;
+    while(t--)
     solve();
     
     return 0;
