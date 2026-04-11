@@ -21,45 +21,70 @@
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define uset unordered_set
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// xx/xx/2026 by Name
+// 10/04/2026 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7; // 998244353;
 ll INF = 1e18 + 7;
 const int MAXN = 1e5 + 5;
 // matriz vll mat(n, vl(m, 0))
+// I can it
 
 ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-    
+    50m 57s
     
 */
+vector<ll> divisores(ll n) {
+    vector<ll> divs;
+
+    for (ll i = 1; i * i <= n; i++) {
+        if (n % i == 0) {
+            divs.pb(i);
+
+            if (i * i != n) {
+                divs.pb(n / i);
+            }
+        }
+    }
+    sort(all(divs));
+
+    return divs;
+}
 
 ll __lcm(ll a, ll b) {
     return a / __gcd(a, b) * b;
 }
 
 void solve() {
-    // cin>>n;
+    cin>>n;
     
-    cout << __lcm(1, 4) << el; // melhor
-    cout << __lcm(2, 3) << el; // se nao sao multiplos entao vai ocorrer uma multiplicacao.
-    cout << __lcm(3, 6) << el; // se sao multiplos ele pega o maior entre eles pegou o 6 aqui!!
-    cout << el;
-    cout << __lcm(1, 8) << el;
-    cout << __lcm(2, 7) << el;
-    cout << __lcm(3, 6) << el;
-    cout << __lcm(4, 5) << el;
+    vector<ll> divs = divisores(n);
+    
+    ll tam = divs.size();
+    
+    ll ans = INF;
+    ll back = INF;
+    
+    ii ansAnsuda;
+    for (ll i = 0; i < tam-1; i++) {
+        back = ans;
+        ans = min(ans, __lcm(divs[i], n - divs[i]));
+        if (back != ans) {
+            ansAnsuda = {divs[i], n - divs[i]};
+        }
+    }
 
+    cout << ansAnsuda.fi << " " << ansAnsuda.sec << el;
     
     
 }
 signed main() {
     ___
-    // cin>>t;
-    // while(t--)
+    cin>>t;
+    while(t--)
     solve();
     
     return 0;
