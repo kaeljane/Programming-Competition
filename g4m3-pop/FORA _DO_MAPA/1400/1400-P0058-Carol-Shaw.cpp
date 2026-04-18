@@ -29,28 +29,44 @@ ll INF = 1e18 + 7;
 const int MAXN = 1e5 + 5;
 // matriz vll mat(n, vl(m, 0))
 
-ll n, t, k, x, y, z; 
+ll n, t, k, x, y, z, X1, Y1, X2, Y2, X3, Y3, X4, Y4;
 string s, a, b, c;
 
 /* (mind) 
-    22m 31s
+    58m 28s
     
 */
+
+bool colidiu (ll x, ll y, ll xEsq, ll yInf, ll xDir, ll ySup) {
+    if (x >=  xEsq && x <= xDir && y >= yInf && y <= ySup) {
+        return true;
+    }
+    return false;
+}
+
 void solve() {
-    cin>>n;
-    vl prefix(n+1);
+    n = 4;
+    cin>>X1>>Y1;
+    cin>>X2>>Y2;
+    cin>>X3>>Y3;
+    cin>>X4>>Y4;
+
+    bool ans = false;
+
+    // ret 1
+    if (colidiu(X1, Y1, X3, Y3, X4, Y4)) ans = true;
+    if (colidiu(X2, Y1, X3, Y3, X4, Y4)) ans = true;
+    if (colidiu(X1, Y2, X3, Y3, X4, Y4)) ans = true;
+    if (colidiu(X2, Y2, X3, Y3, X4, Y4)) ans = true;
     
-    for (ll i = 1; i <= n; i++) {
-        cin>>x;
-        prefix[i] = prefix[i-1] + x;
-    }
-
-    ll ans = INF;
-    for (ll i = 0; i < n; i++) {
-        ans = min (ans, abs(prefix[i] - (prefix[n] - prefix[i])));
-    }
-
-    cout << ans << el;
+    // ret 2
+    if (colidiu(X3, Y3, X1, Y1, X2, Y2)) ans = true;
+    if (colidiu(X4, Y3, X1, Y1, X2, Y2)) ans = true;
+    if (colidiu(X3, Y4, X1, Y1, X2, Y2)) ans = true;
+    if (colidiu(X4, Y4, X1, Y1, X2, Y2)) ans = true;
+    
+    
+    cout << (ans ? "TRUE" : "FALSE" ) << el;
 
     
 }
