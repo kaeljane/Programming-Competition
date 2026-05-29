@@ -26,7 +26,7 @@ using namespace std;
 
 ll MOD = 1e9 + 7; // 998244353;
 ll INF = 1e18 + 7;
-const int MAXN = 225030005; // lembrar que é o numero de entrada max nesse caso(n+1)² + sobrinha
+const int MAXN = 15005; // lembrar que é o numero de entrada max nesse caso(n+1)² + sobrinha
 // matriz vll mat(n, vl(m, 0))
 
 ll n, t, k, x, y, z;
@@ -40,7 +40,9 @@ string s, a, b, c;
     só precisa testar até n+1 o crivo
     n + 1
 
-    41min 8sec
+    (15000 + 1) maximo
+
+    muitos minutos depois...
     
 */
 
@@ -66,21 +68,23 @@ void sieve(ll n) {
 
 void solve() {
     cin>>n;
-    ll tam = primes.size();
     ll ans = 0;
 
-    auto menor = lower_bound(all(primes), n*n);
-    ll idx = menor - primes.begin();
-
-    for (ll i = idx; i < tam; i++) {
-        if (primes[i] <= (n+1)*(n+1)) ans++;
-        else break;
+    for (ll i = n*n; i <= (n+1)*(n+1); i++) {
+        bool f = true;
+        for (auto &p : primes) {
+            if (p * p > i) break;
+            if (i % p == 0) {f = false; break;}
+        }
+        if (f) ans++;
     }
 
     cout << ans << el;
 
     
 }
+
+
 signed main() {
     ___
     // cin>>t;
