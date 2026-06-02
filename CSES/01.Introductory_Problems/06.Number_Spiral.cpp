@@ -37,18 +37,13 @@ string s, a, b, c;
     (z-1)² até z²
     par   : cresce de cima  -> baixo
     impar : cresce de baixo -> cima
+
+    51min 
     
 */
 void solve() {
     cin>>n;
-    
-    // vll mat = {
-    //     {1, 2, 9, 10, 25},
-    //     {4, 3, 8, 11, 24},
-    //     {5, 6, 7, 12, 23},
-    //     {16, 15, 14, 13, 22},
-    //     {17, 18, 19, 20, 21}
-    // };
+   
 
     f (i, 0, n) {
         cin>>y>>x;
