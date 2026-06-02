@@ -33,7 +33,7 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-    
+    2min
     
 */
 void solve() {
