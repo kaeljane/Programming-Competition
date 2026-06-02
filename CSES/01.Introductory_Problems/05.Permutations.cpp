@@ -33,14 +33,14 @@ ll n, t, k, x, y, z;
 string s, a, b, c;
 
 /* (mind) 
-    
+    14min
     
 */
 void solve() {
     cin>>n;
     vl v(n); 
     iota(all(v), 1);
-    
+
     if (n == 1) {
         cout << 1 << el;
         return;
