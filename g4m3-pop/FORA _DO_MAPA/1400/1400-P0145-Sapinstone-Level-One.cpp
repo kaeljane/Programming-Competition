@@ -34,6 +34,7 @@ string s, a, b, c;
 
 /* (mind) 
     77min 58sec
+    anki
     
 */
 void solve() {
