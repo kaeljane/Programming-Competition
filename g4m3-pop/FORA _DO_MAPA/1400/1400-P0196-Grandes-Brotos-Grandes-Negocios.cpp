@@ -39,7 +39,7 @@ string s, a, b, c;
     altura h
     o valor de galho é a soma dos valores dos vertices pelos quais ele passa
 
-    73min 40sec (saiu faisca da cabeça)
+    73min 40sec (saiu faisca da cabeça) 
     
 */
 void solve() {
