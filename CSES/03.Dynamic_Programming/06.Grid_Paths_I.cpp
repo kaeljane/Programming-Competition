@@ -86,7 +86,7 @@ void solve() {
                 if (dp[i][j] >= MOD) dp[i][j] -= MOD;
             }
         }
-    }
+    } 
 
     cout << dp[n-1][n-1] << el;
 
