@@ -1,4 +1,4 @@
-// ------------ Repetition repetition repetition repetition repetition repet... ------------
+// ------------ Discipline is remembering who you said you wanted to be^^ ------------
 #include <bits/stdc++.h>
 #define ll long long
 #define ii pair<ll, int>
@@ -19,50 +19,49 @@
 #define sec second
 #define el '\n'
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
-#define uset unordered_set
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
-// 15/06/2026 by Kaeljane
+// 14/01/2026 by Kaeljane
 using namespace std;
 
-ll MOD = 1e9 + 7; // 998244353;
+ll MOD = 1e9 + 7;
 ll INF = 1e18 + 7;
-const int MAXN = 1e5 + 5;
+const int MAXN = 1e6 + 5;
 // matriz vll mat(n, vl(m, 0))
 
 ll n, t, k, x, y, z, a, b, c;
 string s;
 
 /* (mind) 
-    
-    
+    da para fazer brutao 
+    x, y e z sao qt
+
+    a*x + b*y + c*z = n
 */
 void solve() {
     cin>>n>>a>>b>>c;
-    vector<ll> dp(n+1, -INF); // pq quer o maximo
-    
-    dp[0] = 0;
+    ll ans = 0;
 
-    f (i, 1, n+1) {
-        if (i - a >= 0) {
-            dp[i] = max(dp[i], dp[i-a]);
+    for (ll x = 0; x * a <= n; x++) {
+        for (ll y = 0; x * a + y * b <= n; y++) {
+
+            ll resto = n - (x * a + y * b);
+
+            if (resto % c == 0) {
+                ll z = resto / c;
+                ans = max(ans, (ll)x + y + z); // somando todos os pedaços
+
+            }
         }
-        if (i - b >= 0) {
-            dp[i] = max(dp[i], dp[i-b]);
-        }
-        if (i - c >= 0) {
-            dp[i] = max(dp[i], dp[i-c]);
-        }
-        dp[i] += 1;
+
     }
 
-    cout << dp[n] << el;
-    
-    
+    cout << ans << el;
+
 }
 signed main() {
     ___
-    //cin>>t;
-    //while(t--)
+    // cin>>t;
+    // while(t--)
     solve();
     
     return 0;
