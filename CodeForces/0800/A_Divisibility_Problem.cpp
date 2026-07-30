@@ -29,6 +29,7 @@
 #define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
 #define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
 // 30/11/2025 by Kaeljane
+// 30/07/2026 by Kaeljane
 using namespace std;
 
 ll MOD = 1e9 + 7;
@@ -41,28 +42,21 @@ string s, a, b, c;
 
 /* (mind) 
     D = d*q + r 
-
-    a questao nao explica nada direito vsf
-        fui burra pensando no passado quando deveria pensar no futuro ^-1
+    Quanto falta para o proximo pacote ser 
+    completo!!!
 
 */
+
 void solve() {
     cin>>x>>y;
-    
-    // y - > tamanho do "pacote"
-
-    if (x%y == 0) {
-        cout << 0 << el;
-        return;
+    if (x % y == 0) cout << 0 << el;
+    else {
+        cout << y - x%y << el;
     }
-    ll resto = x%y;
-    ll valorInt = x/y;
-
-    ll D = y*(valorInt+1) + resto;
-
-    cout << D - x - resto << el;
 
 }
+
+
 signed main() {
     ___
     cin>>t;
