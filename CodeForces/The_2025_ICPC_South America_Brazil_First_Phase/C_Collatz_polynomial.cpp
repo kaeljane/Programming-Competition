@@ -43,6 +43,33 @@ string s, a, b, c;
 
     
 */
+
+void solve() {
+    string ss;
+    cin>>n;
+
+    f (i, 0, n+1) {
+        cin>>a;
+        ss += a;
+    }
+
+    x = stoll(ss, nullptr, 2);
+    ans = 0;
+    while (x != 1) {
+        if (x&1) {
+            x = (x << 1) ^ x ^ 1;
+        }
+        else {
+            x = (x >> 1);
+        }
+        ans++;
+    }
+
+    cout << ans << el;
+
+
+}
+
 void solve() {
     cin>>n;
     
