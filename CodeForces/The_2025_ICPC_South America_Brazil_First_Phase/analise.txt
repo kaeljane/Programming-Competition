@@ -1,0 +1,75 @@
+A
+    Ah-Hoc / Lógica de Programação
+    Manipulação de Matrizes (Arrays Bidimensionais)
+B 
+    Grafos / Matemática Discreta
+        Ciclos em Permutação
+    Teoria dos Números
+        Aritmética Modular e Sistemas de Congruência
+        Algoritmo de Euclides Estendido / Teorema Chines de Resto (CRT)
+    
+    Algoritmos em Strings 
+        KMP, Z-Algorithm ou String Hashing
+
+C
+    Operação Bit a Bit (Bitwise Operations / Bitmasks)
+    Simulação 
+
+D 
+    Caminho Euleriano (ou Trilha Euleriana)
+    Combinatória ou Programação Dinâmica (DP)
+
+E 
+    Árvore (Trees)
+    Potência de Grafos (EspecialmenteL Quadrado de uma Árvore)
+    Algoritmos de Busca e Propriedades Estruturais
+
+F
+    Probabilidade e Valor Esperado (Expected Value)
+    Aritmética Modular e Inverso Multiplicativo
+    Otimização de Estaod (Global Multipler / Lazy Update)
+
+G 
+    Força Bruta
+    DP com Bitmask (ou Caminho Mínimo em Grafo de Estados)
+    Operação Bit a Bit
+
+H 
+    Bitmasks
+    Sum Over Subsets DP (SOS DP)
+    Combinatória Básica (Combinação Simples)
+    Princípio da Inclusão-Exclusao (PIE)
+
+I 
+    Matemática (Álgebra e Sistemas de Equações)
+    Inequações e Rastreamento de Limites (Bounds Tracking)
+    Busca Binária na Resposta
+J 
+    Ad-Hoc / Lógica de Programação Básica
+K   
+    Combinatória (Caminhos em Grid / Triângulo de Pascal)
+    Teoria dos Números (Teorema de Kummer)
+    Exponenciação Rápida
+L
+    Simulação / Implementação Básica
+    Estruturas de Dados (Mapas e Strings)
+    Geometria / Álgebra Linear Básica (Produto Escalar)
+
+M
+    Busca Binária na Resposta
+    Pre-computacao (Vetores de Sufico/Prefixo)
+
+Ordem de Resolução:
+    OK J - João João
+    OK A - Alimentação saudável
+    C - Collatz polinomial
+    L - LLMs
+    M - Muralhas Reforçadas
+    I - Investigação Cósmica
+    B - Baralho Alho
+    D - Dominós
+    E - Expansão rodoviária
+    G - Gerador universal
+    H - Habilidades especiais
+    F - Frangolino
+    K - Knouckout
