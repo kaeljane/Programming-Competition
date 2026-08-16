@@ -59,7 +59,7 @@ void solve() {
         if (posicao == 0) { 
             ll vezes = etapas;
             while (vezes--){ // 
-                if (j+1 < n) {j++; cout << v[i][j] << " "; impressos++;}
+                if (j+1 < n) {j++; cout << v[i][j] << " "; impressos++;}_
                 else break;
             }
             posicao = (posicao + 1) % 4;   

@@ -4,7 +4,6 @@
 // 😎 http://g4m3.c073.com/problemas/P0104/
 // 😎 http://g4m3.c073.com/problemas/P0166/ - Implementação
 
-
 // 400
 // 😎 http://g4m3.c073.com/problemas/P0034/ - Aquecimento
 // 😎 http://g4m3.c073.com/problemas/P0042/ - Implementação
@@ -180,8 +179,9 @@
 
 
 // 1400
-// http://g4m3.c073.com/problemas/P0026/
-// http://g4m3.c073.com/problemas/P0046/
+// 😎 http://g4m3.c073.com/problemas/P0026/
+// 😎 http://g4m3.c073.com/problemas/P0046/
+// 😎 http://g4m3.c073.com/problemas/P0081/
 // http://g4m3.c073.com/problemas/P0052/
 // http://g4m3.c073.com/problemas/P0058/
 // http://g4m3.c073.com/problemas/P0090/
