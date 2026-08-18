@@ -29,12 +29,12 @@ ll INF = 1e18 + 7;
 const int MAXN = 1e5 + 5;
 // matriz vll mat(n, vl(m, 0))
 
-ll n, t, k, x, y, z, ans;
+ll n, t, k, x, y, z, ans, m;
 string s, a, b, c;
 
 /* (mind) 
-    Time: 
-    Padrão: 
+    Time: 20min 27sec
+    Padrão: mst, kruskal
     
     Summarize(resumir/descrever):
         
@@ -46,11 +46,79 @@ string s, a, b, c;
     Change(TLE, WA):
         
 */
+
+struct Aresta {
+    ll u, v, peso;
+    string id;
+    bool operator<(Aresta const& outra) {
+        return peso < outra.peso;
+    }
+};
+
+struct DSU {
+    vector<ll> pai, tamanho;
+
+    DSU(ll n) {
+        pai.assign(n + 1, 0);
+        tamanho.assign(n + 1, 1);
+        f (i, 1, n+1) pai[i] = i;
+    }
+
+    ll find_set(ll v) {
+        if (v == pai[v]) return v;
+        return pai[v] = find_set(pai[v]);
+    }
+
+    bool union_sets(ll a, ll b) {
+        a = find_set(a);
+        b = find_set(b);
+        if (a != b) {
+            if (tamanho[a] < tamanho[b]) swap(a, b);
+            pai[b] = a;
+            tamanho[a] += tamanho[b];
+            return true;
+        }
+        return false;
+    }
+
+};
+
 void solve() {
-    cin>>n;
-    ans = 0;
-    vl v(n); f (i, 0, n) cin>>v[i];
-    
+    cin>>n>>m;
+    // ans = 0;
+    // vl v(n); f (i, 0, n) cin>>v[i];
+    vector<Aresta> arestas(m);
+    f (i, 0, m) {
+        cin >> arestas[i].id >> arestas[i].u >> arestas[i].v >> arestas[i].peso;
+    }
+
+    sort(all(arestas));
+
+    DSU dsu(n);
+
+    ll custo_total = 0;
+    ll arestas_usadas = 0;
+    vector<Aresta> mst;
+
+    for (auto a : arestas) {
+        if (dsu.union_sets(a.u, a.v)) {
+            custo_total += a.peso;
+            arestas_usadas++;
+            mst.pb(a);
+
+            if (arestas_usadas == n - 1) break;
+        }
+    }
+
+    if (arestas_usadas < n - 1 && n > 1) {
+        cout << "INF" << el;
+    } 
+    else {
+        f (i, 0, mst.size()) {
+            cout << mst[i].id << " ";
+        }
+        cout << el;
+    }
     
 }
 signed main() {
