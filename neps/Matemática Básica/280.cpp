@@ -33,7 +33,7 @@ ll n, t, k, x, y, z, ans;
 string s, a, b, c;
 
 /* (mind) 
-    Time: 
+    Time: 7min
     Padrão: 
     
         
