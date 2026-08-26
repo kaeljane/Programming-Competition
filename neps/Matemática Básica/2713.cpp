@@ -1,0 +1,61 @@
+// ------------ Repetition repetition repetition repetition repetition repet... ------------
+#include <bits/stdc++.h>
+#define ll long long
+#define ii pair<ll, ll>
+#define vl vector<long long>
+#define vll vector<vector<long long>>
+#define all(v) (v).begin(), (v).end()
+#define rall(v) (v).rbegin(), (v).rend()
+#define soma(v) accumulate(all(v), 0LL)
+#define max_el(v) *max_element(all(v))
+#define min_el(v) *min_element(all(v))
+#define f(i,b,e) for (ll i = (b); i < (e); i++)
+#define rf(i,b,e) for (ll i = (b); i >= (e); i--)
+#define fi first
+#define pb push_back
+#define pf push_front
+#define ppb pop_back
+#define ppf pop_front
+#define sec second
+#define el '\n'
+#define imp(v, t, e) copy(v.begin(), v.end(), ostream_iterator<t> (cout, e))
+#define uset unordered_set
+#define ___ ios::sync_with_stdio(false); cin.tie(nullptr);
+// 25/08/2026 by Kaeljane
+using namespace std;
+
+ll MOD = 1e9 + 7; // 998244353;
+ll INF = 1e18 + 7;
+const int MAXN = 1e5 + 5;
+// matriz vll mat(n, vl(m, 0))
+
+ll n, t, k, x, y, z, ans, h, m, seg;
+string s, a, b, c;
+
+/* (mind) 
+    Time: 30min
+    Padrão: math basica
+    
+    o jogo foi adiado em 
+        
+*/
+void solve() {
+    cin>>h>>m>>seg>>t;
+    
+    ll total = (h * 3600) + (m*60) + seg + t;
+
+    h = (total / 3600) % 24;
+    m = (total / 60) % 60;
+    seg = total % 60;
+    
+    cout << h << el << m << el << seg << el;
+    
+}
+signed main() {
+    ___
+    //cin>>t;
+    //while(t--)
+    solve();
+    
+    return 0;
+}
