@@ -33,7 +33,7 @@ ll n, t, k, x, y, z, ans, m;
 string s, a, b, c;
 
 /* (mind) 
-    Time: 
+    Time: 30min
     Padrão: math basica / teoria dos jogos
     
     Variação clássica da Jogo de Nim (especialmente o jogo da 
