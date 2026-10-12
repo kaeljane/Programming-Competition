@@ -22,15 +22,16 @@ long double formula(ll p, ll a, ll b, ll c, ll d, ll n) {
 }
 
 void solve() {
-    ll p, a, b, c, d, n; cin>>p>>a>>b>>c>>d>>n;
+    ll p, a, b, c, d, n; 
+    
+    while(cin>>p>>a>>b>>c>>d>>n) {
+        long double resposta = formula(p, a, b, c, d, n);    
+        cout << fixed << setprecision(6) << resposta << '\n';
+    }
     
     
-    long double resposta = formula(p, a, b, c, d, n);
-    
-    
-    cout << fixed << setprecision(6) << resposta << '\n';
 
-    
+
 }
 
 int main() {
