@@ -12,9 +12,15 @@ void solve() {
     cin>>v[0]>>v[1]>>v[2];
     sort(all(v));
     
-    ll r = v[2] - v[1];
+    ll rAntAnt = v[1] - v[0];
+    ll rAnt = v[2] - v[1];
     
-    cout << v[2] + r << '\n';
+    if (rAntAnt == rAnt) cout << v[2] + rAnt << '\n';
+    else if (rAntAnt < rAnt) {
+        cout << v[1] + rAntAnt << '\n';
+    }
+    else cout << v[0] + rAnt << '\n';
+    
     
     
 }
