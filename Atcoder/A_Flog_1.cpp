@@ -87,7 +87,7 @@ void solve() {
         else 
             dp[i] = dp[i-1] + abs(pedras[i] - pedras[i-1]);
         //dbg(dp);
-    }
+    } 
 
     cout << dp[n] << '\n';
 

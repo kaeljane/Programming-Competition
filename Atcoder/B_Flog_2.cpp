@@ -79,7 +79,7 @@ void solve() {
                 dp[i] = min(dp[i], dp[i-j] + abs(h[i] - h[i-j]));
             }
             // dbg(dp);
-        }
+        } 
     }
 
     cout << dp[n] << '\n';
