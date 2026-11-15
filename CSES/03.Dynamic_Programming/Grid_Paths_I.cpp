@@ -71,7 +71,7 @@ void solve() {
     vector<string> mat(n);
     for (ll i = 0; i < n; i++) {
         cin>>mat[i];
-    }
+    } 
     vector<vector<ll>> dp(n, vector<ll> (n, 0)); 
     if (mat[0][0] == '*') dp[0][0] = 0;
     else dp[0][0] = 1;
